@@ -1,0 +1,13 @@
+AI-Internship-Project/
+├── Task1_Chatbot/
+│   ├── data/
+│   ├── domain.yml
+│   ├── config.yml
+│   ├── chatbot_demo.gif
+│   └── README.md
+├── Task2_Recommendation/
+│   ├── recommendation_engine.py
+│   ├── sample_data.csv
+│   ├── student_form.html (optional)
+│   └── README.md
+└── README.md
