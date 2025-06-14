@@ -1,0 +1,17 @@
+student_profile = {
+    "skills": ["python", "pandas", "data analysis"],
+    "interests": ["data science"]
+}
+domains = {
+    "Data Science": ["python", "pandas", "data analysis", "matplotlib"],
+    "Web Development": ["html", "css", "javascript", "react"],
+    "Cybersecurity": ["linux", "networking", "cybersecurity", "firewall"]
+}
+def recommend_domain(student, domains):
+    match_scores = {}
+    user_keywords = set(student["skills"] + student["interests"])
+    for domain, keywords in domains.items():
+        match = len(user_keywords.intersection(set(keywords)))
+        match_scores[domain] = match
+    return sorted(match_scores.items(), key=lambda x: x[1], reverse=True)
+print(recommend_domain(student_profile, domains))
